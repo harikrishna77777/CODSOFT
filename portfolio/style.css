@@ -1,0 +1,199 @@
+/* General Styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    font-weight: 400;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 20px;
+    position: relative;
+}
+
+.progress {
+    color: white;
+    height: 100%;
+    border-radius: 8px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.progress.html {
+    background-color: #e44d26;
+    width: 100%;
+}
+
+.progress.css {
+    background-color: #264de4;
+    width: 90%;
+}
+
+.progress.js {
+    background-color: #f7df1e;
+    width: 65%;
+}
+
+.progress.python {
+    background-color: #306998;
+    width: 80%;
+}
+
+.progress.java {
+    background-color: #007396;
+    width: 75%;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ff7e5f;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer-content .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-content img {
+    width: 30px;
+    height: 30px;
+
+}
